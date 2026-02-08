@@ -1,75 +1,26 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Chatbot Flowise</title>
+    <title>Chatbot</title>
     <style>
         body {
-            font-family: sans-serif;
-            background-color: #f0f2f5;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             margin: 0;
-            color: #333;
-        }
-        .container {
-            text-align: center;
-            padding: 20px;
+            padding: 0;
+            background-color: #ffffff;
         }
     </style>
 </head>
 <body>
-<script type="module">
-    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
-    Chatbot.init({
-        chatflowid: "d7774d1a-02d1-4e6f-bd0b-7a12622324b4",
-        apiHost: "https://flowiseai-railway-production-42df.up.railway.app",
-    })
-</script>
-
-	<div class="container">
-        <h1>Prueba de Chatbot Flowise</h1>
-        <p>El chat debería aparecer en la esquina inferior derecha ↘️</p>
-    </div>
 
     <script type="module">
         import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
-        
         Chatbot.init({
-            chatflowid: "AQUI_VA_TU_ID_LARGO", 
-            apiHost: "https://TU-PROYECTO.up.railway.app", 
-            
-            // Personalización Opcional (puedes borrar esto si quieres el diseño por defecto)
-            theme: {
-                button: {
-                    backgroundColor: "#3B81F6",
-                    right: 20,
-                    bottom: 20,
-                    size: "medium",
-                },
-                chatWindow: {
-                    welcomeMessage: "¡Hola! ¿En qué puedo ayudarte hoy?",
-                    backgroundColor: "#ffffff",
-                    height: 700,
-                    width: 400,
-                    fontSize: 16,
-                    poweredByTextColor: "#303235",
-                    botMessage: {
-                        backgroundColor: "#f7f8ff",
-                        textColor: "#303235",
-                        showAvatar: true,
-                    },
-                    userMessage: {
-                        backgroundColor: "#3B81F6",
-                        textColor: "#ffffff",
-                        showAvatar: true,
-                    },
-                }
-            }
+            chatflowid: "d7774d1a-02d1-4e6f-bd0b-7a12622324b4",
+            apiHost: "https://flowiseai-railway-production-42df.up.railway.app",
         })
     </script>
-    </body>
+
+</body>
 </html>
